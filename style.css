@@ -820,7 +820,7 @@ carousel-custom;
 
   @media (prefers-reduced-motion:no-preference) {
     :where(html) {
-      height: fit-content;
+      height: 100%;
       scroll-behavior: smooth;
       
     }
@@ -840,10 +840,6 @@ carousel-custom;
     outline-offset: 5px
   }
 
-  :where(body) {
-    display: grid;
-    height: 100%;
-  }
 
   :where(h1, h2, h3, h4, h5, h6) {
     font-weight: var(--font-weight-9);
