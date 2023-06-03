@@ -746,7 +746,7 @@ carousel-custom;
     -webkit-text-size-adjust: none;
     accent-color: var(--link);
     background-color: var(--surface-1);
-    /* block-size: 100%; */
+    block-size: 100%;
     height: 100%;
     caret-color: var(--link);
     color: var(--text-2);
@@ -1537,7 +1537,7 @@ carousel-custom;
     line-height: var(--font-lineheight-0);
     text-align: center
   }
-/*  */
+
   .testimonial cite {
     -webkit-border-start: none;
     border-inline-start: none
@@ -1573,7 +1573,7 @@ carousel-custom;
     max-inline-size: 70vw;
     margin-inline: auto
   }
-/*  */
+
   .win-8-example.v2 {
     grid-template-columns: repeat(3, 1fr)
   }
@@ -1585,7 +1585,7 @@ carousel-custom;
   .win-8-example.v2>div:first-of-type {
     align-self: stretch
   }
-/*  */
+
   .win-8-example.v3 {
     grid-template-columns: repeat(4, 1fr)
   }
@@ -1658,20 +1658,20 @@ body {
   gap: 4vw;
   /* place-content: center; */
   overflow-x: hidden;
-  max-inline-size: 100vw;
+  /* max-inline-size: 100vw; */
   background-color: whitesmoke;
 }
 
 
-/* body>section:first-of-type { */
-/* -webkit-margin-before: 10vh; */
-/* margin-block-start: 10vh */
-/* } */
-/*  */
-/* body>section:last-of-type { */
-/* -webkit-margin-after: 10vh; */
-/* margin-block-end: 10vh */
-/* } */
+body>section:first-of-type {
+-webkit-margin-before: 10vh;
+margin-block-start: 10vh
+}
+
+body>section:last-of-type {
+-webkit-margin-after: 10vh;
+margin-block-end: 10vh
+}
 
 section {
 display: grid;
@@ -1736,9 +1736,6 @@ text-align: center
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    height: 100%;
-  }
 
   .header-container {
     grid-auto-flow: row;
@@ -1790,6 +1787,16 @@ text-align: center
 }
 
 @media screen and (max-width: 700px) {
+
+    html {
+      height: fit-content;
+    }
+
+    body {
+      display: grid;
+      height: 100%;
+    }
+
   .gif-embed {
     display: block;
     height: 5vw;
@@ -1805,14 +1812,6 @@ text-align: center
   .image {
     height: 90%;
     width: 100vw;
-  }
-
-  html {
-    height: 100%;
-  }
-
-  body {
-    height: 100%;
   }
 
   .additional-info {
@@ -1868,10 +1867,11 @@ p {
   display: grid;
   text-align: center;
   margin-top: 4%;
-  /* font-size: 1vw; */
 }
 
 @media screen and (max-width: 700px) {
+
+
   .footer-container {
     grid-auto-flow: row;
     grid-auto-columns: 100%;
