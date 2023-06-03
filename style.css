@@ -1659,7 +1659,7 @@ carousel-custom;
 body {
   display: grid;
   height: 100%;
-  gap: 2vh;
+  gap: 1vh;
   /* place-content: center; */
   overflow-x: hidden;
   /* max-inline-size: 100vw; */
@@ -1755,8 +1755,10 @@ text-align: center
 }
 
 .header-item {
+  margin-top: 2%;
   margin-left: 8%;
   font-size: 5vw;
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1767,12 +1769,13 @@ text-align: center
   .header-container {
     grid-auto-flow: row;
     grid-auto-columns: 100%;
-    gap: 5vh;
+    gap: 10px;
   }
 
   .header-item {
     display: inline-block;
     margin-left: 0%;
+    margin-top: 5%;
     max-width: 100%;
     font-size: 6vw;
     text-align: center;
@@ -1793,7 +1796,7 @@ text-align: center
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-left: 30%;
-  margin-top: 15px;
+  margin-top: 25%;
   filter: invert(7%);
   /* -webkit-filter: invert(10%); */
 
@@ -1814,13 +1817,15 @@ text-align: center
 
 @media screen and (max-width: 700px) {
   .gif-embed {
+    display: block;
     height: 5vw;
     width: 5vw;
+    margin-top: 0%;
+    margin-left: 40%;
   }
 
   .person-info {
-    display: inline-block;
-    height: auto;
+    display: inline;
   }
 
   .image {
@@ -1836,6 +1841,10 @@ text-align: center
     height: 100%;
   }
 
+  .additional-info {
+    display: block;
+    /* margin-left: 10%; */
+  }
 }
 
 .image {
@@ -1849,13 +1858,10 @@ text-align: center
 }
 
 .additional-info {
-  /* display: inline; */
-  position: relative;
-  /* block-size: auto; */
-  margin-top: 5%;
+  margin-top: 4%;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: auto;
+  margin-bottom: 5%;
 
 }
 
@@ -1946,6 +1952,7 @@ p {
 
 .bi-linkedin:hover {
   color: grey;
+  border-radius: 5px;
 }
 
 .bi-youtube {
