@@ -820,7 +820,7 @@ carousel-custom;
 
   @media (prefers-reduced-motion:no-preference) {
     :where(html) {
-      height: 100%;
+      height: fit-content;
       scroll-behavior: smooth;
       
     }
@@ -840,10 +840,10 @@ carousel-custom;
     outline-offset: 5px
   }
 
-  /* :where(body) { */
-    /* display: grid; */
-    /* height: 100%; */
-  /* } */
+  :where(body) {
+    display: grid;
+    height: 100%;
+  }
 
   :where(h1, h2, h3, h4, h5, h6) {
     font-weight: var(--font-weight-9);
@@ -1449,15 +1449,15 @@ carousel-custom;
       transform: scale(.9)
     }
   }
-/*  */
+
   .fullwidth>.gui-carousel {
     --_carousel-item-size: 100%
   }
-/*  */
+
   .fullwidth .gui-carousel--scroller {
     padding-inline: 0
   }
-/*  */
+
   .fullwidth .captioned-image {
     border-radius: 0;
     box-shadow: none;
@@ -1472,7 +1472,7 @@ carousel-custom;
     max-inline-size: 500px;
     justify-self: center
   }
-/*  */
+
   .scrollhint .gui-carousel--scroller {
     -moz-column-gap: var(--size-2);
     column-gap: var(--size-2)
@@ -1508,14 +1508,14 @@ carousel-custom;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .93333)
   }
-/*  */
+
   .captioned-image>img {
     -o-object-fit: cover;
     object-fit: cover;
     background-color: var(--surface-3);
     box-shadow: var(--inner-shadow-1)
   }
-/*  */
+
   .product-image {
     place-content: start;
     place-items: start
@@ -1662,7 +1662,7 @@ body {
   gap: 4vw;
   /* place-content: center; */
   overflow-x: hidden;
-  max-inline-size: 100vw;
+  /* max-inline-size: 100vw; */
   background-color: whitesmoke;
 }
 
@@ -1687,28 +1687,6 @@ section>header {
 margin-inline: auto;
 text-align: center
 }
-
-/* .github-corner { */
-/* position: absolute; */
-/* right: 4px; */
-/* width: 80px; */
-/* height: 80px; */
-/* fill: var(--surface-4); */
-/* color: var(--surface-1) */
-/* } */
-
-/* .github-corner:hover .octo-arm { */
-/* -webkit-animation: octocat-wave .56s ease-in-out; */
-/* animation: octocat-wave .56s ease-in-out */
-/* } */
-
-/* .github-corner>svg { */
-/* fill: inherit; */
-/* stroke: inherit; */
-/* position: absolute; */
-/* top: 0; */
-/* right: 0 */
-/* } */
 
 @-webkit-keyframes octocat-wave {
 
