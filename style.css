@@ -734,25 +734,25 @@ carousel-custom;
 
 @layer library {
   :where(html) {
-    /* --link: var(--indigo-7); */
-    /* --link-visited: var(--grape-7); */
-    /* --text-1: var(--gray-9); */
-    /* --text-2: var(--gray-7); */
-    /* --surface-1: var(--gray-0); */
-    /* --surface-2: var(--gray-2); */
-    /* --surface-3: var(--gray-3); */
-    /* --surface-4: var(--gray-4); */
-    /* --scrollthumb-color: var(--gray-6); */
-    /* -webkit-text-size-adjust: none; */
-    /* accent-color: var(--link); */
-    /* background-color: var(--surface-1); */
+    --link: var(--indigo-7);
+    --link-visited: var(--grape-7);
+    --text-1: var(--gray-9);
+    --text-2: var(--gray-7);
+    --surface-1: var(--gray-0);
+    --surface-2: var(--gray-2);
+    --surface-3: var(--gray-3);
+    --surface-4: var(--gray-4);
+    --scrollthumb-color: var(--gray-6);
+    -webkit-text-size-adjust: none;
+    accent-color: var(--link);
+    background-color: var(--surface-1);
     block-size: 100%;
     height: 100%;
-    /* caret-color: var(--link); */
-    /* color: var(--text-2); */
-    /* color-scheme: light; */
+    caret-color: var(--link);
+    color: var(--text-2);
+    color-scheme: light;
     font-family: var(--font-sans);
-    /* line-height: var(--font-lineheight-3); */
+    line-height: var(--font-lineheight-3);
     scrollbar-color: var(--scrollthumb-color) transparent
   }
 
@@ -778,7 +778,7 @@ carousel-custom;
       /* color-scheme: dark */
     /* } */
   /* } */
-
+/*  */
   :where(h1, h2, h3, h4, h5, h6, dt) {
     color: var(--text-1)
   }
@@ -795,50 +795,54 @@ carousel-custom;
     outline-color: var(--link)
   }
 
-  /* @media (prefers-color-scheme:light) { */
-    /* :where(html) { */
-      /* --scrollthumb-color: var(--gray-7) */
-    /* } */
-  /* } */
-/*  */
+  @media (prefers-color-scheme:active) {
+    :where(html) {
+      --scrollthumb-color: var(--gray-7);
+      height: 100%;
+      block-size: 100%;
+    }
+  }
+
   *,
   :after,
   :before {
     box-sizing: border-box;
+    
   }
 
   :where(:not(dialog)) {
     margin: 0
   }
 
-  :where(:not(fieldset):not(progress):not(meter)) {
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    border-style: solid;
-    border-width: 0
-  }
-
-  /* @media (prefers-reduced-motion:no-preference) { */
-    /* :where(html) { */
-      /* height: fit-content; */
-      /* scroll-behavior: smooth; */
-      /*  */
-    /* } */
+  /* :where(:not(fieldset):not(progress):not(meter)) { */
+    /* background-origin: border-box; */
+    /* background-repeat: no-repeat; */
+    /* border-style: solid; */
+    /* border-width: 0 */
   /* } */
 
-  @media (prefers-reduced-motion:no-preference) {
-    :where(:focus-visible) {
-      transition: outline-offset 145ms var(--ease-2)
-    }
-
-    :where(:not(:active):focus-visible) {
-      transition-duration: .25s
+  @media (prefers-reduced-motion: no-repeat) {
+    :where(html) {
+      max-block-size: 100%;
+      height: 100%;
+      scroll-behavior: smooth;
+      
     }
   }
-
-  :where(:not(:active):focus-visible) {
-    outline-offset: 5px
-  }
+/*  */
+  /* @media (prefers-reduced-motion:no-preference) { */
+    /* :where(:focus-visible) { */
+      /* transition: outline-offset 145ms var(--ease-2) */
+    /* } */
+/*  */
+    /* :where(:not(:active):focus-visible) { */
+      /* transition-duration: .25s */
+    /* } */
+  /* } */
+/*  */
+  /* :where(:not(:active):focus-visible) { */
+    /* outline-offset: 5px */
+  /* } */
 
 
   :where(h1, h2, h3, h4, h5, h6) {
@@ -918,7 +922,7 @@ carousel-custom;
   }
 
   :where(img, svg, video) {
-    /* block-size: block; */
+    block-size: block;
     max-inline-size: 100%;
   }
 
@@ -1138,15 +1142,15 @@ carousel-custom;
     backdrop-filter: blur(25px)
   }
 
-  /* :where(html[\:has\(dialog\[open\]\)]) { */
-    /* overflow: hidden; */
-    /* height: fit-content; */
-  /* } */
-/*  */
-  /* :where(html:has(dialog[open])) { */
-    /* overflow: hidden; */
-    /* height: fit-content; */
-  /* } */
+  :where(html[\:has\(dialog\[open\]\)]) {
+    overflow: hidden;
+    height: fit-content;
+  }
+
+  :where(html:has(dialog[open])) {
+    overflow: hidden;
+    height: fit-content;
+  }
 
   :where(menu) {
     display: flex;
@@ -1162,8 +1166,8 @@ carousel-custom;
 
 @layer carousel {
   :where(.gui-carousel) {
-    --_carousel-item-size: 80%;
-    --_carousel-gutters: max(4rem, calc((100% - var(--_carousel-item-size)) / 2));
+    --_carousel-item-size: 78%;
+    --_carousel-gutters: max(5rem, calc((100% - var(--_carousel-item-size)) / 2));
     --_carousel-scrollbar-gutter: var(--size-6);
     --_carousel-pagination-size: var(--size-8);
     display: grid;
@@ -1663,27 +1667,27 @@ body {
 }
 
 
-body>section:first-of-type {
--webkit-margin-before: 10vh;
-margin-block-start: 10vh
-}
+/* body>section:first-of-type { */
+/* -webkit-margin-before: 10vh; */
+/* margin-block-start: 10vh */
+/* } */
+/*  */
+/* body>section:last-of-type { */
+/* -webkit-margin-after: 10vh; */
+/* margin-block-end: 10vh */
+/* } */
+/*  */
+/* section { */
+/* display: grid; */
+/* gap: 2vh */
+/* } */
 
-body>section:last-of-type {
--webkit-margin-after: 10vh;
-margin-block-end: 10vh
-}
-
-section {
-display: grid;
-gap: 2vh
-}
-
-section h2,
-section>header {
-margin-inline: auto;
-text-align: center
-}
-
+/* section h2, */
+/* section>header { */
+/* margin-inline: auto; */
+/* text-align: center */
+/* } */
+/*  */
 @-webkit-keyframes octocat-wave {
 
   0%,
@@ -1780,8 +1784,8 @@ text-align: center
 
 .person-info {
   display: grid;
-  height: auto;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   grid-template-columns: 50% 50%;
   background-color: whitesmoke;
 }
@@ -1818,14 +1822,14 @@ text-align: center
 
   .additional-info {
     display: block;
-    /* margin-left: 10%; */
+    
   }
+
 }
 
 .image {
   border-radius: 20px;
   max-inline-size: 90%;
-  block-size: auto;
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
@@ -1924,11 +1928,11 @@ p {
 .bi-linkedin {
   color: #0014f5;
   margin-left: 33%;
+  border-radius: 5px;
 }
 
 .bi-linkedin:hover {
   color: grey;
-  border-radius: 5px;
 }
 
 .bi-youtube {
