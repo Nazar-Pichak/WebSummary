@@ -1661,9 +1661,9 @@ body {
   height: 100%;
   gap: 4vw;
   /* place-content: center; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* max-inline-size: 100vw; */
-  background-color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 
@@ -1928,7 +1928,7 @@ p {
 .bi-linkedin {
   color: #0014f5;
   margin-left: 33%;
-  border-radius: 5px;
+  border-radius: 10%;
 }
 
 .bi-linkedin:hover {
