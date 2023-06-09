@@ -1950,7 +1950,7 @@ body {
   filter: invert(7%);
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .header-container {
     grid-auto-flow: row;
     grid-auto-columns: 100%;
@@ -1996,7 +1996,7 @@ body {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   html {
     height: 100%;
     /* overflow: visible; */
@@ -2059,7 +2059,7 @@ p {
   font-size: 1.2vw;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .footer-container {
     grid-auto-flow: row;
     grid-auto-columns: 100%;
@@ -2125,7 +2125,7 @@ p {
   color: grey;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
 
   .bi-facebook,
   .bi-github,
