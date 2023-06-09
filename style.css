@@ -1750,7 +1750,7 @@ carousel-custom;
     gap: var(--size-5);
   }
 
-  @media (max-width: 354px) {
+  @media (max-width: 450px) {
     .paged-collections .gui-carousel--snap {
       grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
@@ -1950,7 +1950,7 @@ body {
   filter: invert(7%);
 }
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 380px) {
   .header-container {
     grid-auto-flow: row;
     grid-auto-columns: 100%;
@@ -1996,7 +1996,7 @@ body {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 380px) {
   html {
     height: 100%;
     /* overflow: visible; */
@@ -2059,7 +2059,7 @@ p {
   font-size: 1.2vw;
 }
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 380px) {
   .footer-container {
     grid-auto-flow: row;
     grid-auto-columns: 100%;
@@ -2125,7 +2125,7 @@ p {
   color: grey;
 }
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 380px) {
 
   .bi-facebook,
   .bi-github,
