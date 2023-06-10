@@ -922,7 +922,7 @@ carousel-custom;
     accent-color: var(--link);
     background-color: var(--surface-1);
     block-size: 100%;
-    height: scro;
+    min-height: 408px;
     caret-color: var(--link);
     color: var(--text-2);
     color-scheme: light;
@@ -1998,7 +1998,8 @@ body {
 
 @media screen and (max-width: 500px) {
   html {
-    height: 100%;
+    block-size: 100%;
+    min-height: 408px;
   }
 
   body {
@@ -2169,6 +2170,5 @@ p {
   [letter-animation="breath"] {
     --glow-color: black;
   }
-}   --glow-color: black;
-  }
-}
+}  
+  
