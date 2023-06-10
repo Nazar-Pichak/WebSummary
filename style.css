@@ -920,8 +920,8 @@ carousel-custom;
     --scrollthumb-color: var(--gray-6);
     -webkit-text-size-adjust: none;
     accent-color: var(--link);
-    /* background-color: var(--surface-1); */
-    /* block-size: 100%; */
+    background-color: var(--surface-1);
+    block-size: 100%;
     height: 100%;
     caret-color: var(--link);
     color: var(--text-2);
