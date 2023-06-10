@@ -2028,7 +2028,12 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-    html, b {
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: grid;
       height: 100%;
     }
 }
@@ -2174,5 +2179,4 @@ p {
   [letter-animation="breath"] {
     --glow-color: black;
   }
-}}
 }
