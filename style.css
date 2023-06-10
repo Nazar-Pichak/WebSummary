@@ -1998,13 +1998,12 @@ body {
 
 @media screen and (max-width: 500px) {
   html {
-    min-height: 100vh;
-    /* position: relative; */
+    min-height: 100%;
   }
 
   body {
     display: grid;
-    height: 100vh;
+    height: 100%;
   }
 
   .gif-embed {
