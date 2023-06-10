@@ -2030,7 +2030,7 @@ body {
 
 .footer-container {
   display: grid;
-  width: 100%;
+  width: auto;
   height: 100%;
   grid-auto-flow: column;
   grid-auto-columns: 50% 50%;
