@@ -922,7 +922,8 @@ carousel-custom;
     accent-color: var(--link);
     background-color: var(--surface-1);
     block-size: 100%;
-    min-height: 408px;
+    min-height: 500px;
+    /* height: var(--_carousel-scrollbar-gutter); */
     caret-color: var(--link);
     color: var(--text-2);
     color-scheme: light;
@@ -1999,7 +2000,7 @@ body {
 @media screen and (max-width: 500px) {
   html {
     block-size: 100%;
-    min-height: 408px;
+    min-height: 100%;
   }
 
   body {
