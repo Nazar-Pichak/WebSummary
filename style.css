@@ -1998,7 +1998,7 @@ body {
 
 @media screen and (max-width: 500px) {
   html {
-    height: var(--_carousel-scrollbar-gutter);
+    height: 100%;
   }
 
   body {
@@ -2024,21 +2024,6 @@ body {
 
   .additional-info {
     display: block;
-  }
-}
-
-@media screen and (max-width: 354px) {
-  html {
-    height: 100vh;
-  }
-
-  body {
-    display: grid;
-    height: 100%;
-  }
-
-  .footer-container {
-    height: 100%;
   }
 }
 
