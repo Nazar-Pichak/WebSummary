@@ -2028,7 +2028,7 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-    html {
+    html, b {
       height: 100%;
     }
 }
@@ -2174,4 +2174,5 @@ p {
   [letter-animation="breath"] {
     --glow-color: black;
   }
+}}
 }
