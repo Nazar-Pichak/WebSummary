@@ -1858,7 +1858,7 @@ body {
   height: 100%;
   /* orientation: auto; */
   /* overflow: visible; */
-  gap: 5px;
+  /* gap: 5px; */
   /* place-content: center; */
   /* overflow-x: hidden; */
   max-inline-size: 100vw;
@@ -1982,7 +1982,8 @@ body {
 .image {
   display: block;
   border-radius: 20px;
-  inline-size: 20%;
+  height: 15%;
+  width: 15%;
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
