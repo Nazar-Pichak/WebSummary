@@ -921,9 +921,8 @@ carousel-custom;
     -webkit-text-size-adjust: none;
     accent-color: var(--link);
     background-color: var(--surface-1);
-    block-size: 100%;
-    /* min-height: 100%; */
-    /* height: var(--_carousel-scrollbar-gutter); */
+    /* block-size: 100%; */
+    height: 100%;
     caret-color: var(--link);
     color: var(--text-2);
     color-scheme: light;
@@ -1331,12 +1330,12 @@ carousel-custom;
 
   :where(html[\:has\(dialog\[open\]\)]) {
     overflow: hidden;
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   :where(html:has(dialog[open])) {
     overflow: hidden;
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   /* :where(menu) { */
@@ -1855,7 +1854,7 @@ carousel-custom;
 }
 
 body {
-  display: grid;
+  display: flexbox;
   height: 100%;
   /* orientation: auto; */
   /* overflow: visible; */
@@ -1999,6 +1998,7 @@ body {
 
 @media screen and (max-width: 500px) {
   html {
+    block-size: 100%;
     height: 100%;
   }
 
