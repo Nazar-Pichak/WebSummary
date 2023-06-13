@@ -1929,7 +1929,7 @@ body {
 }
 
 .header-item {
-  margin-top: 1vw;
+  margin-top: 1vh;
   margin-left: 8%;
   font-size: 4vw;
 }
@@ -1946,7 +1946,7 @@ body {
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-left: 30%;
-  margin-top: 20px;
+  margin-top: 4vh;
   filter: invert(7%);
 }
 
@@ -1973,7 +1973,6 @@ body {
 
 .person-info {
   display: flex;
-  /* height: 100%; */
   /* width: 100%; */
   grid-template-columns: 30% 70%;
   background-color: whitesmoke;
@@ -1991,10 +1990,10 @@ body {
 }
 
 .additional-info {
-  margin-top: 1%;
-  margin-left: 1%;
-  margin-right: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 @media screen and (max-width: 500px) {
