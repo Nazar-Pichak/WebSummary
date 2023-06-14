@@ -2149,7 +2149,7 @@ p {
   }
 }
 
-@media  screen and (max-height: 334px) {
+@media  screen and (max-height: 340px) {
   .gui-carousel--scroller {
     padding-block: 1rem 1rem;
   }
