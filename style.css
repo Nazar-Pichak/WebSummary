@@ -1424,14 +1424,15 @@ carousel-custom;
     grid-auto-flow: column;
     align-items: center;
     gap: var(--_carousel-gutters);
-    /* padding-block: var(--size-2) var(--_carousel-scrollbar-gutter); */
-    padding-block: 1rem 1.65rem;
+    padding-block: var(--size-2) var(--_carousel-scrollbar-gutter);
+    /* padding-block: 1rem 1rem; */
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scroll-padding-inline: var(--_carousel-gutters);
     padding-inline: var(--_carousel-gutters);
   }
+
 
   @media (prefers-reduced-motion: no-preference) {
     :where(.gui-carousel--scroller) {
@@ -2145,6 +2146,21 @@ p {
   .bi-linkedin {
     width: 5vw;
     height: 5vh;
+  }
+}
+
+@media  screen and (max-height: 334px) {
+  .gui-carousel--scroller {
+    padding-block: 1rem 1rem;
+  }
+
+  .image {
+      border-radius: 10%;
+      
+  }
+
+  .animate-visibility {
+    border-radius: 0.8rem;
   }
 }
 
