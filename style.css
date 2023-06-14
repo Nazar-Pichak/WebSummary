@@ -1424,7 +1424,8 @@ carousel-custom;
     grid-auto-flow: column;
     align-items: center;
     gap: var(--_carousel-gutters);
-    padding-block: var(--size-2) var(--_carousel-scrollbar-gutter);
+    /* padding-block: var(--size-2) var(--_carousel-scrollbar-gutter); */
+    padding-block: 1rem 1.65rem;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
@@ -1946,7 +1947,7 @@ body {
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-left: 30%;
-  margin-top: 2vh;
+  margin-top: 1.5vh;
   filter: invert(7%);
 }
 
@@ -2020,11 +2021,20 @@ body {
   }
 
   .image {
-    max-inline-size: 90%;
+    height: 90%;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
 
   .additional-info {
     display: block;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
 }
 
@@ -2170,5 +2180,4 @@ p {
   [letter-animation="breath"] {
     --glow-color: black;
   }
-}  
-  
+}
