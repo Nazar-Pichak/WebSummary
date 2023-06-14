@@ -1992,7 +1992,7 @@ body {
 }
 
 .additional-info {
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
@@ -2151,7 +2151,7 @@ p {
 
 @media  screen and (max-height: 340px) {
   .gui-carousel--scroller {
-    padding-block: 1rem 1rem;
+    padding-block: 0.8rem 0.8rem;
   }
 
   .image {
