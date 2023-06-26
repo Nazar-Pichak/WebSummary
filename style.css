@@ -2151,8 +2151,18 @@ p {
 
 @media  screen and (max-height: 340px) {
 
-  body, html {
-    height: 340px;
+  html {
+    height: 365px;
+  }
+
+  body {
+    display: grid;
+    height: 365px;
+  }
+
+  .footer-container {
+    display: grid;
+    height: 100%;
   }
 
   .gui-carousel--scroller {
