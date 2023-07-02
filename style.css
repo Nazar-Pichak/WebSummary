@@ -2149,22 +2149,22 @@ p {
   }
 }
 
-@media  screen and (max-height: 340px) {
+@media  screen and (max-height: 384px) {
 
   html {
-    min-height: 340px;
+    height: 100%;
   }
 
   body {
-    min-height: 340px;
+    height: 100%;
   }
 
-  .footer-container {
-    height: 50Vh;
-  }
 
   .gui-carousel--scroller {
     padding-block: 0.8rem 0.8rem;
+    display: grid;
+    height: 40Vh;
+    width: auto;
   }
 
   .image {
