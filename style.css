@@ -1241,7 +1241,7 @@ carousel-custom;
   :where(figure) {
     display: grid;
     gap: var(--size-2);
-    place-items: center;
+    /* place-items: center; */
   }
 
   :where(figure)> :where(figcaption) {
@@ -1682,10 +1682,11 @@ carousel-custom;
     box-shadow: var(--shadow-4);
     border-radius: var(--radius-4);
     overflow: hidden;
-    max-inline-size: -webkit-max-content;
-    max-inline-size: -moz-max-content;
-    max-inline-size: max-content;
+    /* max-inline-size: -webkit-max-content; */
+    /* max-inline-size: -moz-max-content; */
+    /* max-inline-size: max-content; */
     margin-inline: auto;
+    /* width: 100%; */
   }
 
   .captioned-image>* {
@@ -1702,6 +1703,7 @@ carousel-custom;
     text-align: center;
     padding-block: var(--size-9) var(--size-3);
     padding-inline: var(--size-3);
+    width: 100vw;
   }
 
   .captioned-image>figcaption>a {
@@ -1975,7 +1977,7 @@ body {
 
 .person-info {
   display: flex;
-  /* width: 100%; */
+  /* width: auto; */
   grid-template-columns: 30% 70%;
   background-color: whitesmoke;
 }
@@ -1988,7 +1990,7 @@ body {
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 40px;
 }
 
 .additional-info {
@@ -2149,7 +2151,7 @@ p {
   }
 }
 
-@media  screen and (max-height: 384px) {
+@media screen and (max-height: 384px) {
 
   html {
     height: 100%;
@@ -2163,13 +2165,13 @@ p {
   .gui-carousel--scroller {
     padding-block: 0.8rem 0.8rem;
     display: grid;
-    height: 40Vh;
+    height: 50vh;
     width: auto;
   }
 
   .image {
-      border-radius: 10%;
-      
+    border-radius: 10%;
+
   }
 
   .animate-visibility {
