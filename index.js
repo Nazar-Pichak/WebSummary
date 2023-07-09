@@ -375,14 +375,14 @@ const span = (text, index) => {
 
   node.textContent = text
   node.style.setProperty('--index', index)
-  
+
   return node
 }
 
 const byLetter = text =>
   [...text].map(span)
 
-const {matches:motionOK} = window.matchMedia(
+const { matches: motionOK } = window.matchMedia(
   '(prefers-reduced-motion: no-preference)'
 )
 

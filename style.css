@@ -931,14 +931,14 @@ carousel-custom;
     scrollbar-color: var(--scrollthumb-color) transparent;
   }
 
-  /* @media (dynamic-range:high) { */
-  /* @supports (color(display-p3 0 .5 1)) { */
-  /* :where(html) { */
-  /* --link: color(display-p3 0 .5 1); */
-  /* --link-visited: color(display-p3 .6 .2 1); */
-  /* } */
-  /* } */
-  /* } */
+  @media (dynamic-range:high) {
+    @supports (color(display-p3 0 .5 1)) {
+      :where(html) {
+        --link: color(display-p3 0 .5 1);
+        --link-visited: color(display-p3 .6 .2 1);
+      }
+    }
+  }
 
   /* @media (prefers-color-scheme:dark) { */
   /* :where(html) { */
@@ -1330,20 +1330,18 @@ carousel-custom;
 
   :where(html[\:has\(dialog\[open\]\)]) {
     overflow: hidden;
-    /* height: fit-content; */
   }
 
   :where(html:has(dialog[open])) {
     overflow: hidden;
-    /* height: fit-content; */
   }
 
-  /* :where(menu) { */
-  /* display: flex; */
-  /* gap: var(--size-3); */
-  /* -webkit-padding-start: 0; */
-  /* padding-inline-start: 0 */
-  /* } */
+  :where(menu) {
+    display: flex;
+    gap: var(--size-3);
+    -webkit-padding-start: 0;
+    padding-inline-start: 0
+  }
 
   :where(sup) {
     font-size: 0.5em;
@@ -1359,7 +1357,7 @@ carousel-custom;
     --_carousel-pagination-size: var(--size-8);
     display: grid;
     grid-template-columns: [carousel-gutter] var(--_carousel-gutters) 1fr [carousel-gutter] var(--_carousel-gutters);
-    grid-template-rows: [carousel-scroller] 1fr [carousel-pagination] var(--_carousel-pagination-size);
+    /* grid-template-rows: [carousel-scroller] 1fr [carousel-pagination] var(--_carousel-pagination-size); */
   }
 
   :where(.gui-carousel):focus-visible {
@@ -1860,8 +1858,8 @@ carousel-custom;
 body {
   display: grid;
   height: 100%;
-  /* orientation: auto; */
-  /* overflow: visible; */
+  orientation: auto;
+  overflow: visible;
   /* gap: 5px; */
   /* place-content: center; */
   /* overflow-x: hidden; */
@@ -1978,6 +1976,7 @@ body {
 .person-info {
   display: flex;
   /* width: auto; */
+  height: auto;
   grid-template-columns: 30% 70%;
   background-color: whitesmoke;
 }
@@ -1990,14 +1989,14 @@ body {
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 40px;
+  margin-bottom: 5%;
 }
 
 .additional-info {
   margin-top: 1%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
 }
 
 @media screen and (max-width: 500px) {
@@ -2163,7 +2162,7 @@ p {
 
 
   .gui-carousel--scroller {
-    padding-block: 0.8rem 0.8rem;
+    padding-block: 0.4rem 1rem;
     display: grid;
     height: 50vh;
     width: auto;
@@ -2177,6 +2176,11 @@ p {
   .animate-visibility {
     border-radius: 0.8rem;
   }
+
+  .footer-container {
+    height: 100%;
+  }
+
 }
 
 @keyframes breath {
