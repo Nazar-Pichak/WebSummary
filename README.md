@@ -13,3 +13,5 @@ In digital media, pagination involves dividing content into discrete pages, usua
 
 Based on it was developed this curriculum vitae.
 The basis was found in Google [web.dev](https://developers.google.com/web/) and as a fundamental part was taken component pattern [carouse](https://web.dev/patterns/components/) to make this page.
+
+👉 See [here](https://nazar-pichak.github.io/WebSummary/) as well to look how it works.
