@@ -1,3 +1,29 @@
+const span = (text, index) => {
+  const node = document.createElement("span");
+
+  node.textContent = text;
+  node.style.setProperty("--index", index);
+
+  return node;
+};
+
+const byLetter = (text) => [...text].map(span);
+
+const { matches: motionOK } = window.matchMedia(
+  "(prefers-reduced-motion: no-preference)"
+);
+
+if (motionOK) {
+  const splitTargets = document.querySelectorAll("[split-by]");
+
+  splitTargets.forEach((node) => {
+    let nodes = byLetter(node.innerText);
+
+    if (nodes) node.firstChild.replaceWith(...nodes);
+  });
+}
+
+
 (() => {
   if (!("onscrollend" in window)) {
     let e = function (e, t, s) {
@@ -185,13 +211,9 @@
         )),
           (this.mutation_observer = new MutationObserver((e, t) => {
             e.filter((e) => e.removedNodes.length > 0).forEach((e) => {
-              [...e.removedNodes]
-                .filter(
-                  (e) => e.querySelector(".gui-carousel") === this.elements.root
-                )
-                .forEach((e) => {
-                  this.#h();
-                });
+              [...e.removedNodes].filter((e => e.querySelector(".gui-carousel") === this.elements.root)).forEach((e) => {
+                this.#h();
+              });
             });
           }));
       }
@@ -369,30 +391,3 @@
   });
 })();
 
-
-const span = (text, index) => {
-  const node = document.createElement('span')
-
-  node.textContent = text
-  node.style.setProperty('--index', index)
-
-  return node
-}
-
-const byLetter = text =>
-  [...text].map(span)
-
-const { matches: motionOK } = window.matchMedia(
-  '(prefers-reduced-motion: no-preference)'
-)
-
-if (motionOK) {
-  const splitTargets = document.querySelectorAll('[split-by]')
-
-  splitTargets.forEach(node => {
-    let nodes = byLetter(node.innerText)
-
-    if (nodes)
-      node.firstChild.replaceWith(...nodes)
-  })
-}

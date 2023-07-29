@@ -1445,8 +1445,7 @@ carousel-custom;
   :where(.gui-carousel--controls) {
     display: flex;
     justify-content: space-between;
-    padding-inline: var(--_carousel-gutters);
-    display: contents;
+    padding-inline: var(--_carousel-gutters);display: contents
   }
 
   :where(.gui-carousel--controls)>.gui-carousel--control {
@@ -1476,7 +1475,7 @@ carousel-custom;
     padding: 0;
     overflow: hidden;
     z-index: var(--layer-1);
-    transition: opacity 0.5s var(--ease-2) 0.5s;
+    transition: opacity .5s var(--ease-2) .5s;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -1514,7 +1513,7 @@ carousel-custom;
   }
 
   [disabled]:where(.gui-carousel--control)>svg {
-    opacity: 0.25;
+    opacity: .25;
   }
 
   :where(.gui-carousel--control):not([disabled]):is(:hover, :focus-visible) {
@@ -2072,6 +2071,11 @@ p {
   font-size: 1.2vw;
 }
 
+.svg-icons {
+  display: none;
+}
+
+
 @media screen and (max-width: 500px) {
   .footer-container {
     grid-auto-flow: row;
@@ -2166,6 +2170,7 @@ p {
     display: grid;
     height: 50vh;
     width: auto;
+    scroll-behavior: smooth;
   }
 
   .image {
@@ -2199,7 +2204,7 @@ p {
 @media (prefers-reduced-motion: no-preference) {
   [letter-animation]>span {
     display: inline-block;
-    white-space: break-spaces;
+    white-space: inherit;
   }
 
   [letter-animation="breath"] {
